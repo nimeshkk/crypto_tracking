@@ -21,15 +21,15 @@ export default function Add() {
     e.preventDefault();
     try {
       await Axios.post('http://localhost:8800/crypto_details', detail);
-      navigate('/');
+      navigate('/detailsEnter');
     } catch (err) {
       console.log(err);
     }
   };
 
   return (
-    <div className='form'>
-      <h1>Add details</h1>
+    <div className='add-form'>
+      <h1 className='add-title'>Add details</h1>
       <input
         type='text'
         placeholder='title'
@@ -45,7 +45,7 @@ export default function Add() {
         onChange={handleChange}
       />
 
-      <button type='submit' onClick={handleClick}>
+      <button className='submit-btn' type='submit' onClick={handleClick}>
         Submit
       </button>
     </div>

@@ -237,3 +237,166 @@
     display: flex;
   }
 }
+
+/* details */
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .detail {
+    width: 48%; 
+  }
+}
+
+@media (min-width: 992px) {
+  .detail {
+    width: 31%; 
+  }
+}
+
+/* details */
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.detail {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.details-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.detail h2 {
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.detail h1 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.detail p {
+  margin: 10px;
+  color: #555;
+}
+
+.add-btn {
+  display: block;
+  width: 80px;
+  margin: 20px auto 0; 
+  padding: 10px;
+  text-align: center;
+  background-color: #068d37;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.delet-btn{
+  display: block;
+  width: 50%;
+  margin: 20px auto 0; 
+  padding: 10px;
+  text-align: center;
+  background-color: #750505;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delet-btn:hover, .add-btn:hover {
+  background-color: #555;
+}
+
+
+@media (min-width: 768px) {
+  .detail {
+    width: 48%; 
+  }
+}
+
+@media (min-width: 992px) {
+  .detail {
+    width: 31%; 
+  }
+}
+
+/* adddetails */
+
+.add-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.add-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #068d37;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #056e2c;
+}
+
+@media (min-width: 768px) {
+  .add-form {
+    max-width: 600px;
+  }
+}

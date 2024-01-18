@@ -39,10 +39,18 @@ app.post("/crypto_details",(req,res) => {
     db.query(q,[values],(err,data)=>{
         if(err) return res.json(err);
         return res.json("succesfully");
-    })
+    });
 })
 
+app.delete("/crypto_details/:id", (req, res) => {
+    const detailId = req.params.id;
+    const q = "DELETE FROM crypto_details WHERE id = ?";
 
+    db.query(q,[detailId],(err,data)=>{
+        if(err) return res.json(err);
+        return res.json("Book has been delete successfully");
+    })
+})
 
 
 app.listen(8800, ()=>{
