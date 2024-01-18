@@ -76,3 +76,151 @@
   }
 }
 
+.S_container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  
+}
+
+.S_header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+.S_text {
+  text-align: center;
+}
+
+.S_underline {
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0;
+}
+
+.S_inputs {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.S_input {
+  margin-bottom: 15px;
+
+}
+
+.S_label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input_S {
+  width: 100%;
+  padding: 10px;
+  border: 0.5px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+}
+
+.S_button {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 50px; 
+ 
+}
+
+.signinlink , .signuplink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.signinlink p ,.signuplink p{
+  margin-bottom: 10px; 
+}
+
+.signup_button, .signin_button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup_button:hover, .signin_button:hover {
+  background-color: #45a049;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
