@@ -79,23 +79,25 @@
     font-size: 1.2rem;
   }
 }
+/* signin signup */
 
 .S_container {
   
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   
   
 }
 
 .S_header {
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 50%;
+
 }
 
 .S_text {
@@ -111,13 +113,13 @@
 .S_inputs {
   display: flex;
   flex-direction: column;
-  
-
+  margin-bottom: 5px;
+   
 }
 
 .S_input {
-  margin-bottom: 15px;
-
+  margin-bottom: 10px;
+  flex-direction: row;
 }
 
 .S_label {
@@ -139,8 +141,13 @@
   display:flex;
   justify-content:center;
   align-items:center;
-  margin-top: 50px; 
+  margin-top: 1px; 
  
+}
+.error-txt{
+  color: red;
+  font-size: 14px;
+
 }
 
 .signinlink , .signuplink{
@@ -177,6 +184,7 @@
   padding: 1rem;
   background-color: #333;
   color: #fff;
+  
 }
 
 .navbar-logo {
