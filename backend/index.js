@@ -42,6 +42,7 @@ app.post("/crypto_details",(req,res) => {
     });
 })
 
+
 app.delete("/crypto_details/:id", (req, res) => {
     const detailId = req.params.id;
     const q = "DELETE FROM crypto_details WHERE id = ?";
@@ -49,6 +50,21 @@ app.delete("/crypto_details/:id", (req, res) => {
     db.query(q,[detailId],(err,data)=>{
         if(err) return res.json(err);
         return res.json("Book has been delete successfully");
+    })
+})
+
+app.put("/crypto_details/:id", (req, res) => {
+    const detailId = req.params.id;
+    const q = "UPDATE crypto_details SET `title` = ?, `description` = ? WHERE id = ?";
+
+    const values=[
+        req.body.title,
+        req.body.description,
+    ]
+
+    db.query(q,[...values,detailId],(err,data)=>{
+        if(err) return res.json(err);
+        return res.json("Book has been update successfully");
     })
 })
 

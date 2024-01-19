@@ -267,76 +267,70 @@
 
 /* details */
 
-.details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 .detail {
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-.details-title {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 .detail h2 {
-  background-color: #333;
-  color: #fff;
-  margin: 0;
-  padding: 10px;
-  text-align: center;
+  margin-bottom: 5px;
 }
 
 .detail h1 {
-  font-size: 1.5rem;
-  margin: 10px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .detail p {
-  margin: 10px;
-  color: #555;
+  margin-bottom: 10px;
+}
+
+.delet-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delet-btn:hover {
+  background-color: #c82333;
 }
 
 .add-btn {
-  display: block;
-  width: 80px;
-  margin: 20px auto 0; 
-  padding: 10px;
-  text-align: center;
-  background-color: #068d37;
+  background-color: #08a24b;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  padding: 7px 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.delet-btn{
-  display: block;
-  width: 50%;
-  margin: 20px auto 0; 
-  padding: 10px;
-  text-align: center;
-  background-color: #750505;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-left: 42%;
+  border-radius: 4px;
+ 
 }
 
-.delet-btn:hover, .add-btn:hover {
-  background-color: #555;
+.add-btn:hover {
+  background-color: #34dd61;
+}
+
+.update-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
 }
 
 
@@ -380,8 +374,9 @@ input {
 
 .submit-btn {
   display: block;
-  width: 100%;
+  width: 20%;
   padding: 10px;
+  margin: 0 auto;
   text-align: center;
   background-color: #068d37;
   color: #fff;

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const DetailsEnter = () => {
+
   const [details, setDetails] = useState([]);
 
   useEffect(() => {
@@ -29,19 +30,23 @@ const DetailsEnter = () => {
 
   return (
     <div>
-      <h1 className='details-title'>Details</h1>
-      <div className="details">
+    <h1 className='details-title'>Details</h1>
+    <button className='add-btn'><a href='/add'>ADD</a></button>
+    <table className="details-table">
+      <tbody>
         {details.map((detail) => (
-          <div className="detail" key={detail.id}>
-            <h2>{detail.id}</h2>
-            <h1>{detail.title}</h1>
-            <p>{detail.description}</p>
-            <button className='delet-btn' onClick={() => handleDelete(detail.id)}>Delete</button>
-          </div>
+          <tr className="detail" key={detail.id}>
+            <td><h2>{detail.id}</h2></td>
+            <td><h1>{detail.title}</h1></td>
+            <td><p>{detail.description}</p></td>
+            <td><button className='delet-btn' onClick={() => handleDelete(detail.id)}>Delete</button></td>
+            <td><button className='update-btn'><a href={`/update/${detail.id}`} className='update-link'>Update</a></button></td>
+          </tr>
         ))}
-      </div>
-      <button className='add-btn'><a href='/add'>ADD</a></button>
-    </div>
+      </tbody>
+    </table>
+    
+  </div>
   );
 };
 

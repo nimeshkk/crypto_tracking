@@ -24,7 +24,7 @@ function App() {
           <Route path="/searchCoin" element={<SearchCoin />} />
           <Route path="/detailsEnter" element={<Details />} />
           <Route path="/add" element={<Add />} />
-          <Route path="/update" element={<Update />} />
+          <Route path="/update/:id" element={<Update />} />
       </Routes>
     </BrowserRouter>
    
