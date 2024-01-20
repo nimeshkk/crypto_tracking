@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Validation from './loginValidation';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function SignIn() {
@@ -8,19 +10,37 @@ export default function SignIn() {
     email: '',
     password: ''
   });
-
+  
+  const navigate = useNavigate();
   const [errors,setErrors]=useState({
 
   })
 
   const handleInput = (event) => {
-    setValues(prev=>({...prev,[event.target.name]:[event.target.value]}))
-  }
+    setValues(prev => ({ ...prev, [event.target.name]: event.target.value }));
+}
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setErrors(Validation(values));
+
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  setErrors(Validation(values));
+
+  if (!errors.email && !errors.password) {
+      axios.post('http://localhost:8800/login', values)
+          .then(res => {
+              if (res.data === "success") {
+                  navigate('/home');
+              } else {
+                  alert("Invalid email or password");
+              }
+          })
+          .catch(err => {
+              console.log(err);
+          });
   }
+}
+
   
   return (
     <div className='S_container'>

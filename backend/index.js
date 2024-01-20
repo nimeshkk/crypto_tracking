@@ -14,8 +14,9 @@ const db =mysql.createConnection(
     }
 );
 
-app.use(express.json())
-app.use(cors())
+app.use(express.json());
+app.use(cors());
+app.use(express.json());
 
 app.get("/", (req,res)=>{
     res.json("hello")
@@ -68,6 +69,42 @@ app.put("/crypto_details/:id", (req, res) => {
     })
 })
 
+// signup
+
+app.post("/signup",(req,res)=> {
+    const q = "insert into crypto_signup(`name`,`email`,`password`) VALUES (?)";
+    const values = [
+        req.body.name,
+        req.body.email,
+        req.body.password,
+    ];
+
+    db.query(q,[values],(err,data)=>{
+        if(err) return res.json(err);
+        return res.json("succesfully");
+    });
+
+
+})
+
+// login
+
+app.post("/login",(req,res)=> {
+    const q = "SELECT * FROM crypto_signup WHERE `email` = ? AND `password` = ? ";
+   
+    db.query(q, [req.body.email, req.body.password], (err,data) => {
+        if(err){ 
+            return res.json(err);
+        }
+        if(data.length > 0){
+            return res.json("success");
+        }
+        else{
+            return res.json("faile");
+        }
+        
+    })
+})
 
 app.listen(8800, ()=>{
     console.log("Backend server is running!")

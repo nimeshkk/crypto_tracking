@@ -246,34 +246,32 @@
   }
 }
 
-/* details */
 
-.details {
-  display: flex;
-  flex-wrap: wrap;
+/* detailsEnter */
+
+
+.details-form {
+  margin: auto;
+  padding: 20px;
+  max-width: 800px; 
 }
 
-.detail {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-  margin-bottom: 20px;
+.details-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 16px;
 }
 
-
-@media (min-width: 768px) {
-  .detail {
-    width: 48%; 
-  }
+.add-btn {
+  background-color: #08a24b;
+  color: #fff;
+  border: none;
+  padding: 7px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin: 10px 0; 
 }
-
-@media (min-width: 992px) {
-  .detail {
-    width: 31%; 
-  }
-}
-
-/* details */
 
 .details-table {
   width: 100%;
@@ -283,8 +281,9 @@
 
 .detail {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .detail h2 {
@@ -300,28 +299,22 @@
   margin-bottom: 10px;
 }
 
+.delet-btn,
+.add-btn,
+.update-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 16px;
+  color: #fff;
+}
+
 .delet-btn {
   background-color: #dc3545;
-  color: #fff;
-  border: none;
-  padding: 7px 15px;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 .delet-btn:hover {
   background-color: #c82333;
-}
-
-.add-btn {
-  background-color: #08a24b;
-  color: #fff;
-  border: none;
-  padding: 7px 16px;
-  cursor: pointer;
-  margin-left: 42%;
-  border-radius: 4px;
- 
 }
 
 .add-btn:hover {
@@ -330,34 +323,22 @@
 
 .update-btn {
   background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  border-radius: 4px;
 }
 
 .update-btn:hover {
   background-color: #0056b3;
 }
 
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .detail {
-    width: 48%; 
+    width: 100%; 
   }
 }
 
-@media (min-width: 992px) {
-  .detail {
-    width: 31%; 
-  }
-}
 
-/* adddetails */
-
+/* update css */
 .add-form {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -382,9 +363,8 @@ input {
 
 .submit-btn {
   display: block;
-  width: 20%;
+  width: 100%;
   padding: 10px;
-  margin: 0 auto;
   text-align: center;
   background-color: #068d37;
   color: #fff;
@@ -400,6 +380,57 @@ input {
 
 @media (min-width: 768px) {
   .add-form {
-    max-width: 600px;
+    max-width: 800px;
+  }
+}
+
+
+/* add css */
+
+.add-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.add-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #068d37;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #056e2c;
+}
+
+@media (min-width: 768px) {
+  .add-form {
+    max-width: 800px;
   }
 }

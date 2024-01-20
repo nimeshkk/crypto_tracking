@@ -15,9 +15,10 @@ const NavBar = () => {
         <a href="">Crypto</a>
       </div>
       <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-        <a href='/searchCoin'>Crypto Market Task</a>
-        <a href='/signin'>Authentic Task</a>
-        <a href='/detailsEnter'>CRUD Task</a>
+        <a href='/home'>Crypto Market</a>
+        {/* <a href='/signin'>Authentic Task</a> */}
+        <a href='/crud_home'>Add Details</a>
+        <a href='/signin'>Logout</a>
       </div>
       <div className="navbar-toggle" onClick={toggleMenu}>
         <span></span>

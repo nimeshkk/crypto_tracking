@@ -24,7 +24,7 @@ export default function Update() {
     e.preventDefault();
     try {
       await Axios.put(`http://localhost:8800/crypto_details/${detailId}`, detail); 
-      navigate('/detailsEnter');
+      navigate('/crud_home');
     } catch (err) {
       console.log(err);
     }

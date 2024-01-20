@@ -6,6 +6,7 @@ import Coin from './coin';
 
 
 
+
 function SearchCoin() {
   
     const [coins, setCoins] = useState([]);
@@ -43,6 +44,7 @@ function SearchCoin() {
 
 
   return (
+    
     <div className='coin-app'>
       <div className='coin-search'>
         <h1 className='coin-text'>Search currency</h1>

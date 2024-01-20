@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import NavBar from '../navbar';
 
 const DetailsEnter = () => {
 
@@ -29,7 +30,8 @@ const DetailsEnter = () => {
   };
 
   return (
-    <div>
+    
+    <div className='details-form'>  
     <h1 className='details-title'>Details</h1>
     <button className='add-btn'><a href='/add'>ADD</a></button>
     <table className="details-table">

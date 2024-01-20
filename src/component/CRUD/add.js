@@ -21,7 +21,7 @@ export default function Add() {
     e.preventDefault();
     try {
       await Axios.post('http://localhost:8800/crypto_details', detail);
-      navigate('/detailsEnter');
+      navigate('/crud_home');
     } catch (err) {
       console.log(err);
     }
