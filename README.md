@@ -1,3 +1,42 @@
+<table>
+  <tr>
+    <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(150).png" width="400" height="250"/></td>
+    <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(151).png" width="400" height="250"/></td>
+  </tr>
+  <tr>
+     <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(152).png" width="400" height="250"/></td>
+     <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(153).png" width="400" height="250"/></td>
+    
+  </tr>
+   <tr>
+     <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(154).png" width="400" height="250"/></td>
+     <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(155).png" width="400" height="250"/></td>
+    
+  </tr>
+   <tr>
+     <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(156).png" width="400" height="250"/></td>
+     <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(157).png" width="400" height="250"/></td>
+    
+  </tr>
+   <tr>
+     <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(158).png" width="400" height="250"/></td>
+     <td><img src="https://github.com/nimeshkk/crypto_tracking/blob/master/public/img/Screenshot%20(159).png" width="400" height="250"/></td>
+    
+  </tr>
+</table>
+
+## Overview
+
+This project is a dynamic React website that incorporates user authentication using SQL for secure data storage and real-time cryptocurrency updates. Users can seamlessly manage their data with support for CRUD operations.
+
+## Technologies Used
+
+- **ReactJS:** A JavaScript library for building responsive user interfaces.
+- **SQL Database:** Utilizing MySQL or PostgreSQL for secure storage of user information.
+- **Node.js:** A JavaScript runtime for the back-end server and server-side logic.
+- **Express.js:** A web application framework for Node.js, facilitating the development of robust APIs.
+- **Authentication with SQL:** Secure user authentication directly within the SQL database.
+- **Cryptocurrency API:** Integration of a real-time cryptocurrency API to display live updates on the website.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
